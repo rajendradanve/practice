@@ -1,35 +1,27 @@
-
 .game-container{
     background-color: yellow;
     border: 1px solid red;
-    width: 70%;
-    height: 70vh ;
+    width: 60%;
     margin: 50px auto;
     display: flex;
     justify-content: center;
 }
 
 .column {
-    
     flex: 1 1;
-    width: auto;
-    min-width: 50px;
-    height: auto;
-    min-height: 350px;
+    height: 100%;
     background-color: white;
     border: 1px black solid;
     box-sizing: border-box;
     padding: 0;
     display: flex;
     flex-direction: column;
-    
 }
 
 .cell{
     flex: 1 1;
     width: 100%;
-    height: calc(100%/6);
+    min-width: 50px;
     background-color: aqua;
     border: 1px black solid;
-    
 }
