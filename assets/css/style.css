@@ -35,3 +35,11 @@
     background-color: white;
     margin: 5% auto;
 }
+
+.red-circle{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background-color: red;
+    margin: 5% auto;
+}

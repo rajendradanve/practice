@@ -18,7 +18,6 @@ $(".cell").css("width", cellSizeString);
 $(".cell").css("height", cellSizeString);
 //$(".empty-circle").css("margin", marginString);
 
-
 for(let i=0; i<7; i++){
     $(".game-container").append(`<div id="column${i}"></div>`);
     $(`#column${i}`).addClass("column");
@@ -32,5 +31,13 @@ for(let i=0; i<7; i++){
         
     }
 
+}
+
+for(let i=0; i<7; i++){
+    $(`#column${i}`).mouseenter(function(){
+        $(`#coin${i}6`).removeClass("empty-circle").addClass("red-circle");
+    }).mouseleave(function(){
+        $(`#coin${i}6`).removeClass("red-circle").addClass("empty-circle");
+    })
 }
 
