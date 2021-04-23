@@ -8,12 +8,16 @@ $(".game-container").css("height", gameContainerSizeString);
 
 //calculating cell size 
 let cellSize = gameContainerSize/7;
+let margin = cellSize/20;
 let cellSizeString = cellSize.toString() + "px";
+let marginString = margin.toString() + "px";
 
 //setting width and height for the column
 $(".column").css("width", cellSizeString);
 $(".cell").css("width", cellSizeString);
 $(".cell").css("height", cellSizeString);
+//$(".empty-circle").css("margin", marginString);
+
 
 for(let i=0; i<7; i++){
     $(".game-container").append(`<div id="column${i}"></div>`);
